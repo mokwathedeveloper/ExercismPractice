@@ -2,20 +2,16 @@ package main
 
 import (
 	"fmt"
-	"cars"
+	"carsassemble/cars"
 )
 
 func main() {
-	productionRate := 120      
-	successRate := 85.0        
-	carsProduced := 117       
+	productionRate := 120
+	successRate := 85.0
+	carsProduced := 117
 
-	
 	workingCarsHour := cars.CalculateWorkingCarsPerHour(productionRate, successRate)
-
 	workingCarsMinute := cars.CalculateWorkingCarsPerMinute(productionRate, successRate)
-
-	
 	cost := cars.CalculateCost(carsProduced)
 
 	fmt.Printf("Working cars produced per hour: %.2f\n", workingCarsHour)
