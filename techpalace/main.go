@@ -7,12 +7,12 @@ import (
 func main() {
 	customerName := "Judy"
 	welcome := WelcomeMessage(customerName)
-	fmt.Println("📢 Welcome Message:")
+	fmt.Println("Welcome Message:")
 	fmt.Println(welcome)
 	fmt.Println()
 
 	bordered := AddBorder("Welcome!", 10)
-	fmt.Println("🎉 Message with Border:")
+	fmt.Println("Message with Border:")
 	fmt.Println(bordered)
 	fmt.Println()
 
@@ -22,6 +22,6 @@ func main() {
 **************************
 `
 	cleaned := CleanUpMessage(oldMessage)
-	fmt.Println("🧹 Cleaned Marketing Message:")
+	fmt.Println("Cleaned Marketing Message:")
 	fmt.Println(cleaned)
-} 
+}
